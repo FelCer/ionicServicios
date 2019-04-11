@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    The world is your oyster.
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  </div>
+</ion-content>
+
+<div class="ion-padding" *ngIf='miarreglo'>
+  <ion-card *ngFor='let item of miarreglo'>
+    <ion-card-header>
+      <ion-card-title>{{item.usuario}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle>Pais:{{item.pais}}</ion-card-subtitle>
+      <ion-card-subtitle>Poblacion:{{item.ciudad}}</ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+</div>
+<!-- <div class="ion-padding" *ngIf='dato'>
+  <ion-card *ngFor='let item of dato'>
+    <ion-card-header>
+      <ion-card-title>{{dato.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle>Poblacion:{{dato.pais}}</ion-card-subtitle>
+      <ion-card-subtitle>Poblacion:{{dato.ciudad}}</ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
+</div> -->
